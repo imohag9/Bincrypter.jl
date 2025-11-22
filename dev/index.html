@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Home · Bincrypter.jl</title><meta name="title" content="Home · Bincrypter.jl"/><meta property="og:title" content="Home · Bincrypter.jl"/><meta property="twitter:title" content="Home · Bincrypter.jl"/><meta name="description" content="Documentation for Bincrypter.jl."/><meta property="og:description" content="Documentation for Bincrypter.jl."/><meta property="twitter:description" content="Documentation for Bincrypter.jl."/><meta property="og:url" content="https://imohag9.github.io/Bincrypter.jl/"/><meta property="twitter:url" content="https://imohag9.github.io/Bincrypter.jl/"/><link rel="canonical" href="https://imohag9.github.io/Bincrypter.jl/"/><script data-outdated-warner src="assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="assets/documenter.js"></script><script src="search_index.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-mocha.css" data-theme-name="catppuccin-mocha"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-macchiato.css" data-theme-name="catppuccin-macchiato"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-frappe.css" data-theme-name="catppuccin-frappe"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-latte.css" data-theme-name="catppuccin-latte"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href>Bincrypter.jl</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li class="is-active"><a class="tocitem" href>Home</a><ul class="internal"><li class="toplevel"><a class="tocitem" href="#Usage-Guide"><span>Usage Guide</span></a></li><li><a class="tocitem" href="#Installation"><span>Installation</span></a></li><li><a class="tocitem" href="#Basic-Usage"><span>Basic Usage</span></a></li><li><a class="tocitem" href="#Security-Considerations"><span>Security Considerations</span></a></li></ul></li><li><a class="tocitem" href="api/">API Reference</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href>Home</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Home</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/imohag9/Bincrypter.jl" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/imohag9/Bincrypter.jl/blob/main/docs/src/index.md" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="Bincrypter"><a class="docs-heading-anchor" href="#Bincrypter">Bincrypter</a><a id="Bincrypter-1"></a><a class="docs-heading-anchor-permalink" href="#Bincrypter" title="Permalink"></a></h1><p>Documentation for <a href="https://github.com/imohag9/Bincrypter.jl">Bincrypter</a>.</p><h1 id="Usage-Guide"><a class="docs-heading-anchor" href="#Usage-Guide">Usage Guide</a><a id="Usage-Guide-1"></a><a class="docs-heading-anchor-permalink" href="#Usage-Guide" title="Permalink"></a></h1><p>This guide demonstrates how to use <code>Bincrypter.jl</code> to encrypt, obfuscate, and manage your executable files and scripts.</p><h2 id="Installation"><a class="docs-heading-anchor" href="#Installation">Installation</a><a id="Installation-1"></a><a class="docs-heading-anchor-permalink" href="#Installation" title="Permalink"></a></h2><p>First, install the package using Julia&#39;s package manager:</p><pre><code class="language-julia hljs">using Pkg
+Pkg.add(&quot;Bincrypter&quot;)</code></pre><p>The <code>bincrypter.sh</code> script is automatically downloaded and configured when the <code>Bincrypter</code> module is first loaded, so no manual setup for the external tool is required.</p><h2 id="Basic-Usage"><a class="docs-heading-anchor" href="#Basic-Usage">Basic Usage</a><a id="Basic-Usage-1"></a><a class="docs-heading-anchor-permalink" href="#Basic-Usage" title="Permalink"></a></h2><p>The primary function is <code>Bincrypter.bincrypter(input_file::AbstractString; &lt;kwargs&gt;)</code>. It takes the path to your script or binary as the first argument, and various keyword arguments to control <code>bincrypter.sh</code>&#39;s behavior.</p><p>Let&#39;s assume you have a simple shell script named <code>my_script.sh</code>:</p><pre><code class="language-bash hljs">#!/bin/bash
+echo &quot;Hello from my script!&quot;</code></pre><h3 id="Obfuscating-a-Script"><a class="docs-heading-anchor" href="#Obfuscating-a-Script">Obfuscating a Script</a><a id="Obfuscating-a-Script-1"></a><a class="docs-heading-anchor-permalink" href="#Obfuscating-a-Script" title="Permalink"></a></h3><p>To obfuscate a script without password protection, simply call <code>bincrypter</code> with the file path. The original file will be overwritten with its obfuscated version.</p><pre><code class="language-julia hljs">using Bincrypter
+
+script_path = &quot;my_script.sh&quot;
+# Ensure the script exists and is executable for this example
+# (In a real scenario, you&#39;d have your actual script here)
+open(script_path, &quot;w&quot;) do f
+    write(f, &quot;#!/bin/bash\necho &#39;Hello from my script!&#39;&quot;)
+end
+chmod(script_path, 0o755)
+
+println(&quot;--- Before obfuscation ---&quot;)
+run(`cat $script_path`)
+
+bincrypter(script_path)
+
+println(&quot;\n--- After obfuscation ---&quot;)
+# The output will look different, but the script remains functional.
+run(`cat $script_path`)
+run(`bash $script_path`) # It should still run and print &quot;Hello from my script!&quot;
+
+rm(script_path) # Clean up</code></pre><h3 id="Encrypting-with-a-Password"><a class="docs-heading-anchor" href="#Encrypting-with-a-Password">Encrypting with a Password</a><a id="Encrypting-with-a-Password-1"></a><a class="docs-heading-anchor-permalink" href="#Encrypting-with-a-Password" title="Permalink"></a></h3><p>To encrypt a script with a password, use the <code>password</code> keyword argument. When the encrypted script is executed, it will prompt the user for this password.</p><pre><code class="language-julia hljs">using Bincrypter
+
+script_path = &quot;my_secret_script.sh&quot;
+open(script_path, &quot;w&quot;) do f
+    write(f, &quot;#!/bin/bash\necho &#39;Top secret information!&#39;&quot;)
+end
+chmod(script_path, 0o755)
+
+bincrypter(script_path; password=&quot;MySuperSecretPassword&quot;)
+
+println(&quot;`my_secret_script.sh` has been encrypted. Try running it from your terminal:&quot;)
+println(&quot;bash $(script_path)&quot;)
+println(&quot;You will be prompted for the password &#39;MySuperSecretPassword&#39;.&quot;)
+
+rm(script_path)</code></pre><h3 id="Locking-to-the-Current-System"><a class="docs-heading-anchor" href="#Locking-to-the-Current-System">Locking to the Current System</a><a id="Locking-to-the-Current-System-1"></a><a class="docs-heading-anchor-permalink" href="#Locking-to-the-Current-System" title="Permalink"></a></h3><p>The <code>lock=true</code> option ties the encrypted binary to the current system&#39;s ID and user ID. This is useful for distributing binaries that should only run on a specific machine. Note that when <code>lock=true</code>, any <code>password</code> argument is ignored by <code>bincrypter.sh</code>.</p><pre><code class="language-julia hljs">using Bincrypter
+
+script_path = &quot;my_locked_binary.sh&quot;
+open(script_path, &quot;w&quot;) do f
+    write(f, &quot;#!/bin/bash\necho &#39;This script is locked to this machine!&#39;&quot;)
+end
+chmod(script_path, 0o755)
+
+bincrypter(script_path; lock=true)
+
+println(&quot;`my_locked_binary.sh` has been locked to this system. It will only run here.&quot;)
+println(&quot;If you try to run it on another machine, it will likely fail.&quot;)
+
+rm(script_path)</code></pre><h3 id="Quiet-Mode"><a class="docs-heading-anchor" href="#Quiet-Mode">Quiet Mode</a><a id="Quiet-Mode-1"></a><a class="docs-heading-anchor-permalink" href="#Quiet-Mode" title="Permalink"></a></h3><p>To suppress the console output from the <code>bincrypter.sh</code> tool itself (e.g., download progress, success messages), use <code>quiet=true</code>.</p><pre><code class="language-julia hljs">using Bincrypter
+
+script_path = &quot;quiet_script.sh&quot;
+open(script_path, &quot;w&quot;) do f
+    write(f, &quot;#!/bin/bash\necho &#39;Quietly processed!&#39;&quot;)
+end
+chmod(script_path, 0o755)
+
+println(&quot;Processing `quiet_script.sh` quietly...&quot;)
+bincrypter(script_path; quiet=true)
+println(&quot;Done.&quot;)
+
+rm(script_path)</code></pre><h3 id="Custom-Environment-Variables"><a class="docs-heading-anchor" href="#Custom-Environment-Variables">Custom Environment Variables</a><a id="Custom-Environment-Variables-1"></a><a class="docs-heading-anchor-permalink" href="#Custom-Environment-Variables" title="Permalink"></a></h3><p><code>bincrypter.sh</code> supports certain behaviors configurable via environment variables (e.g., <code>BC_PADDING</code>). You can pass these via the <code>env</code> keyword argument as a <code>Dict{String, String}</code>.</p><pre><code class="language-julia hljs">using Bincrypter
+
+script_path = &quot;nopadding_script.sh&quot;
+open(script_path, &quot;w&quot;) do f
+    write(f, &quot;#!/bin/bash\necho &#39;No padding used!&#39;&quot;)
+end
+chmod(script_path, 0o755)
+
+# Obfuscate with BC_PADDING=0 to create a potentially smaller output file
+bincrypter(script_path; env=Dict(&quot;BC_PADDING&quot; =&gt; &quot;0&quot;))
+println(&quot;`nopadding_script.sh` processed with BC_PADDING=0.&quot;)
+
+rm(script_path)</code></pre><h2 id="Security-Considerations"><a class="docs-heading-anchor" href="#Security-Considerations">Security Considerations</a><a id="Security-Considerations-1"></a><a class="docs-heading-anchor-permalink" href="#Security-Considerations" title="Permalink"></a></h2><ul><li><strong>Password Visibility</strong>: When <code>password</code> is provided, it is passed as a command-line argument to the underlying <code>bincrypter.sh</code> script. This means the password might be visible in process lists (e.g., <code>ps aux</code>) on the system for a short period. Exercise caution with sensitive information.</li><li><strong>In-Place Modification</strong>: The <code>bincrypter.sh</code> tool, and consequently this wrapper, modifies the input file <em>in place</em>. Always ensure you have backups of your original scripts/binaries before using this tool.</li><li><strong>External Tool Source</strong>: <code>Bincrypter.jl</code> relies on the <code>bincrypter.sh</code> script. While it&#39;s pinned to a specific commit for stability, ensure you trust the upstream source if you are dealing with sensitive operations.</li></ul><p>For a detailed list of functions and their parameters, please refer to the API Reference.</p></article><nav class="docs-footer"><a class="docs-footer-nextpage" href="api/">API Reference »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.16.0 on <span class="colophon-date" title="Saturday 22 November 2025 16:12">Saturday 22 November 2025</span>. Using Julia version 1.12.2.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
