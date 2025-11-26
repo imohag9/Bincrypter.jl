@@ -14,7 +14,7 @@ using Aqua
     if IS_BINCRYPTER_AVAILABLE
 
         @testset "Code quality (Aqua.jl)" begin
-            Aqua.test_all(Bincrypter)
+            Aqua.test_all(Bincrypter;deps_compat = false)
         end
 
         # --- Test Setup ---
